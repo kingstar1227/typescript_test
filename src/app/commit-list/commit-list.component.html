@@ -1,0 +1,19 @@
+<h1>Commits</h1>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">SHA</th>
+    <th scope="col">Message</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let commit of commits">
+    <th scope="row">{{ commit.id }}</th>
+    <td>
+      {{ commit.sha }}
+    </td>
+    <td>{{ commit.commit.message}}</td>
+  </tr>
+  </tbody>
+</table>
